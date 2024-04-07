@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lato&family=Poppins:wght@400;500&family=Rubik:ital,wght@0,300..900;1,300..900&family=Salsa&display=swap');
+
+*{
+    font-family: 'Poppins, sans-serif';
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.container .heading{
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+    font-size: 35px;
+    border-bottom: 3px solid #000000 ;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 120px 9%;
+    background-color: #000000;    
+}
+
+.container .box-container.active{
+    padding-bottom: 150px;
+}
+
+.container .box-container .box{
+    border-radius: 20px;
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 50px 10px rgba(0, 0, 0, .2);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.container .box-container .box .image{
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .box-container .box .image .play{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.479);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+}
+
+.container .box-container .box:hover .image .play{
+    display: flex;
+}
+
+.container .box-container .box .image .play i{
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.container .box-container .box .content{
+    padding-top: 15px;
+}
+
+.container .box-container .box .content h3{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.music-player{
+    position: fixed;
+    bottom: -125px; left: 0; right: 0;
+    background: #ffffff;
+    z-index: 1000;
+}
+
+.music-player.active{
+    bottom: 0;
+}
+
+.music-player .music-title{
+    font-size: 25px;
+    margin-bottom: 5px;
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+}
+
+.music-player audio{
+    width: 100%;
+}
+
+.music-player audio::-webkit-media-controls-enclosure{
+    border-radius: 0;
+    background: #fff;
+}
+
+.music-player #close-player{
+    position: absolute;
+    top:-50px; right:5px;
+    height:50px;
+    width: 55px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    border:3px solid rgb(255, 255, 255);
+    border-bottom: none;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .container .box-container{
+        padding: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .container .box-container{
+        grid-template-columns: 1fr;
+    }
+
+    .container .box-container .box .image{
+        height: 300px;
+    }
+}
