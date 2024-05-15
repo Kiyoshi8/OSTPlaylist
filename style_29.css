@@ -10,20 +10,24 @@
     transition: .2s linear;
 }
 
-.container .heading{
+/*.container .heading{
     text-align: center;
     padding: 10px;
     color: #000000;
     font-size: 35px;
     border-bottom: 3px solid #000000 ;
-}
+}*/
 
 .container .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 120px 9%;
-    background-color: #000000;    
+    gap: 20px;
+    padding: 20px 9%;
+    background-image: url('images/壁纸3人.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .container .box-container.active{
@@ -42,7 +46,7 @@
 }
 
 .container .box-container .box .image{
-    height: 700px;
+    height: 540px;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
@@ -145,4 +149,17 @@
     .container .box-container .box .image{
         height: 300px;
     }
+}
+
+.box {  
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes box {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
 }
