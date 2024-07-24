@@ -23,7 +23,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px 9%;
-    background-image: url('images/壁纸3人.jpg');
+    background-image: url('images/008av8Hogy1hrenc0eae7j31hc0u0h4u.jpg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -36,9 +36,9 @@
 
 .container .box-container .box{
     border-radius: 20px;
-    background: #2b5876;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #741717;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #850000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #580000, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     box-shadow: 0 50px 10px rgba(0, 0, 0, .2);
     padding: 20px;
