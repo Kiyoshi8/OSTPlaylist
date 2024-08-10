@@ -109,6 +109,7 @@
     text-align: center;
     color: #333;
     padding: 10px;
+    background: linear-gradient(to right, #580000, #000000);
 }
 
 .music-player audio{
@@ -117,7 +118,8 @@
 
 .music-player audio::-webkit-media-controls-enclosure{
     border-radius: 0;
-    background: #fff;
+    /*background: #fff;*/
+    background: linear-gradient(to right, #580000, #000000);
 }
 
 .music-player #close-player{
